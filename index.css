@@ -1,0 +1,77 @@
+body{
+    color:beige;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px ;
+}
+
+#container{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,minmax(100px,auto));
+    max-width: 960px;
+    margin:0 auto;
+    border:1px solid black;
+}
+
+header,nav,section,article,footer{
+    border:1px solid red;
+}
+
+header{
+    background-color: #320E3b;
+    grid-column: 1/9;
+    grid-row:1/2;
+}
+nav{
+    padding: 20px;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #e56399;
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+nav div{
+    padding:20px;
+    border:1px solid black;
+    background-color: burlywood;
+}
+section{
+    background-color: #7f96ff;
+    grid-column: 1/9;
+    grid-row:3/6;
+}
+article{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5px;
+    background-color: #a6cfd5;
+    grid-column: 1/9;
+    grid-row: 6/12;
+}
+article div{
+    background-color: coral;
+    padding:90px;
+    margin:20px;
+}
+footer{
+    color:black;
+    background-color: #dbfcff;
+    grid-column: 1/9;
+    grid-row: 12/13;
+}
+
+
+/* 
+PARENT GRID LINES
+Header      1/9  column, row 1/2
+Nav         1/9  column, row 2/3
+section     1/9  column, row 3/6
+article     1/9 column,  row 6/12
+footer      1/9 column, row 12/13
+*/
+
+
+
+   
